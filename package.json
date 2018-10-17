@@ -1,6 +1,6 @@
 {
     "name": "react-rainbow-styleguide",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "index.js",
     "repository": "git@github.com:reiniergs/react-rainbow-styleguide.git",
     "author": "Reinier Guerra <reiniergs@gmail.com>",
