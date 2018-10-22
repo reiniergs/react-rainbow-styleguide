@@ -11,7 +11,6 @@ export default function Wrapper({ children }) {
     );
 }
 
-
 Wrapper.propTypes = {
     children: PropTypes.oneOfType([
         PropTypes.arrayOf(PropTypes.node),
@@ -22,4 +21,3 @@ Wrapper.propTypes = {
 Wrapper.defaultProps = {
     children: [],
 };
-

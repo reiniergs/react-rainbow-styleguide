@@ -1,0 +1,27 @@
+.react-rainbow-ribbon-container {
+    height: 68px;
+    margin-right: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 20000;
+}
+
+.react-rainbow-github-badge {
+    border-color: #061c3f;
+    background-color: transparent;
+    font-size: 0.8rem;
+    color: #061c3f;
+}
+
+@media (max-width: 800px) {
+    .react-rainbow-ribbon-container {
+        margin-right: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .react-rainbow-ribbon-container {
+        margin-right: 16px;
+    }
+}

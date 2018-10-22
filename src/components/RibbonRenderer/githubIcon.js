@@ -1,17 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-export default function GitHubIcon(props) {
-    const {
-        className,
-        style,
-    } = props;
+export default function GitHubIcon() {
     return (
         <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1">
-            <title>github</title>
-            <desc>Created with Sketch.</desc>
             <g id="components" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-                <g id="Components-Badge" transform="translate(-934.000000, -29.000000)" fill="#061c3f" fill-rule="nonzero">
+                <g id="Components-Badge" transform="translate(-934.000000, -29.000000)" fill="#061c3f" fillRule="nonzero">
                     <g id="Group-2" transform="translate(264.000000, 21.000000)">
                         <g id="Group" transform="translate(567.000000, 8.000000)">
                             <g id="github" transform="translate(103.000000, 0.000000)">
@@ -24,13 +17,3 @@ export default function GitHubIcon(props) {
         </svg>
     );
 }
-
-GitHubIcon.propTypes = {
-    className: PropTypes.string,
-    style: PropTypes.object,
-};
-
-GitHubIcon.defaultProps = {
-    className: undefined,
-    style: {},
-};

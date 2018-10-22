@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faList, faCode, faWrench } from '@fortawesome/free-solid-svg-icons';
+import { faList, faCode } from '@fortawesome/free-solid-svg-icons';
 import Pathline from 'react-styleguidist/lib/rsg-components/Pathline';
 import Tabset from 'react-rainbow-components/components/Tabset';
 import Tab from 'react-rainbow-components/components/Tab';
@@ -28,6 +28,7 @@ export default class ReactComponent extends Component {
             name,
             heading,
             description,
+            pathLine,
             examples,
             tabBody,
         } = this.props;
@@ -43,7 +44,7 @@ export default class ReactComponent extends Component {
                     </div>
                     <div className="rainbow-p-vertical_large rainbow-p-horizontal_x-large">
                         <Pathline name={name}>
-                            {`import ${name} from 'react-rainbow-components/components/${name}'`}
+                            {pathLine}
                         </Pathline>
                     </div>
 
@@ -55,7 +56,6 @@ export default class ReactComponent extends Component {
 
                         <Tab name="examples" label={<TabLabel icon={faCode} label="INTERACTIVE EXAMPLES" />} />
                         <Tab name="properties" label={<TabLabel icon={faList} label="PROPERTIES AND METHODS" />} />
-                        <Tab name="utils" label={<TabLabel icon={faWrench} label="UTILS" />} />
                     </Tabset>
                 </div>
                 <div className="rainbow-p-top_small rainbow-p-horizontal_x-large">
@@ -82,7 +82,12 @@ export default class ReactComponent extends Component {
 ReactComponent.propTypes = {
     name: PropTypes.string.isRequired,
     heading: PropTypes.node.isRequired,
-    tabBody: PropTypes.node.isRequired,
     description: PropTypes.node.isRequired,
     examples: PropTypes.node.isRequired,
+    tabBody: PropTypes.node.isRequired,
+    pathLine: PropTypes.string,
+};
+
+ReactComponent.defaultProps = {
+    pathLine: undefined,
 };

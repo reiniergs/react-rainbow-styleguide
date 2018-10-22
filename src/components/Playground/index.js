@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import isInGettingStarted from '../../libs/isInGettingStarted'
 import './styles.css';
 
 export default function PlaygroundRenderer(props) {
@@ -13,7 +14,7 @@ export default function PlaygroundRenderer(props) {
     } = props;
     const { ...rest } = previewProps;
 
-    if (name === 'Getting Started' || name === 'Overview' || name === 'Usage') {
+    if (isInGettingStarted(name)) {
         return (
             <div className="rainbow-position_relative">
                 {preview}
