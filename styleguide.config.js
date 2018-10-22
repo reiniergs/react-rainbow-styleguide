@@ -4,6 +4,9 @@ const styles = require('./styles');
 
 module.exports = {
     styles,
+    getComponentPathLine() {
+        return undefined;
+    },
     styleguideComponents: {
         StyleGuideRenderer: path.join(__dirname, './components/StyleGuide'),
         SectionHeading: path.join(__dirname, './components/SectionHeading'),
@@ -18,5 +21,6 @@ module.exports = {
         PathlineRenderer: path.join(__dirname, './components/Pathline'),
         Wrapper: path.join(__dirname, './components/Wrapper'),
         SectionRenderer: path.join(__dirname, './components/SectionRenderer'),
+        RibbonRenderer: path.join(__dirname, './components/RibbonRenderer'),
     }
 };

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import logo from './../../../assets/images/rainbow-logo.svg';
 import Avatar from './../../../src/components/Avatar';
 import './styles.css';
 
@@ -9,6 +8,7 @@ export default function GlobalHeader(props) {
         className,
         children,
         src,
+        logo,
     } = props;
 
     return (
@@ -31,10 +31,15 @@ GlobalHeader.propTypes = {
     children: PropTypes.node,
     className: PropTypes.string,
     src: PropTypes.string,
+    logo: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node,
+    ])
 };
 
 GlobalHeader.defaultProps = {
     children: null,
     className: undefined,
-    src: 'images/user/user1.jpg',
+    src: '',
+    logo: null,
 };

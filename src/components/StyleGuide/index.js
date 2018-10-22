@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Ribbon from 'react-styleguidist/lib/rsg-components/Ribbon';
 import Logo from '../Logo/index';
 import './styles.css';
 
-export default class StyleGuide extends React.Component {
+export default class StyleGuide extends Component {
     render() {
         const {
             children,
@@ -11,7 +12,7 @@ export default class StyleGuide extends React.Component {
             toc,
             version,
         } = this.props;
-        debugger;
+
         return (
             <div className="react-rainbow-styleguide-container rainbow-position-align_start">
                 <aside className="react-rainbow-sidebar">
@@ -21,6 +22,7 @@ export default class StyleGuide extends React.Component {
                 <main className="react-rainbow-main-content">
                     {children}
                 </main>
+                <Ribbon />
             </div>
         );
     }
