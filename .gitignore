@@ -2,4 +2,6 @@
 node_modules
 yarn-error.log
 components
+libs
 !src/components
+!src/libs
