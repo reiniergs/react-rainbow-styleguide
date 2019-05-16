@@ -4986,9 +4986,9 @@ react-rainbow-components@^0.5.0:
     react-dom "^16.4.2"
     react-ga "^2.5.3"
 
-react-rainbow-components@^0.7.2:
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/react-rainbow-components/-/react-rainbow-components-0.7.2.tgz#1405c5d9613cd192b681c31167a1ccbff33a7f87"
+react-rainbow-components@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-rainbow-components/-/react-rainbow-components-1.2.0.tgz#1c54dfca96ac6ebcaa537d4fefc793fb40cc657c"
   dependencies:
     autosize "^4.0.2"
     chart.js "^2.7.3"
